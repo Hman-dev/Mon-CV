@@ -1,11 +1,12 @@
 
-
 body{
   position: relative;
   font-weight: bold;
   font-family:  Helvetica, sans-serif;
 }
-
+section{
+  color: white;
+}
 
 img{
  position: relative;
@@ -13,7 +14,6 @@ img{
  left: 11px;
  border-radius: 100px;
  margin-bottom: 40px;
- 
 
 
 }
@@ -46,11 +46,14 @@ h2{
 }
 section h2 a{
   color:black;
- box-shadow: 10px 10px 10px 10px rgb(160, 149, 149)
+  background: #17a2b8;
+  box-shadow: 10px 10px 10px 10px rgb(160, 149, 149)
 
 }
+
 a:hover{
   color:black;
+  text-decoration:none;
 }
 h3{
   color:black;
@@ -79,6 +82,7 @@ color:black;
   
 }
 
+
 .img-fluid{
   width:600px;
   margin:20px;
@@ -90,20 +94,18 @@ color:black;
   transform: scale(0.85);
 
 }
-
-
-section{
-  color: white;
+.btn-large{
+  margin: -43px;
 }
+
+
 
 .border{
   border: 2px solid black;
 }
 .card-body{
-  /* z-index: 2; */
   padding:1.25rem;
-  color: white;
-  
+  color: white; 
   box-shadow:  10px 10px 10px 10px rgb(160, 149, 149);
   /* background-image: url("https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"); */
 }
@@ -112,7 +114,7 @@ section{
 .card-deck{
   
   color:white;
-  /* box-shadow: 10px 10px rgb(82, 67, 67) ; */
+
 }
 .card:hover{
  transform: scale(1.03);
@@ -122,9 +124,10 @@ section{
 
 /* ------Media queries-----*/
 
-@media screen and (max-width:376px) and (max-width:768px){
-  .social_network{
-    display: none;
+@media screen and (min-width:320px) and (max-width:767px){
+  .social_network+p{
+    display: flex;
+    justify-content: center;
   
   }
   .fa-user-graduate{
@@ -134,28 +137,44 @@ section{
 *{
   font-size:auto;
 }
+.card:hover{
+  transform: scale(1.03);
+  
+ }
+
+.card-body{
+  padding:0.25rem;
+  
+}
+.img-fluid{
+  position: relative;
+  top: -15px;
+  left: -20px;
+}
+
 
 }
 
 
 
 @media screen and (min-width:768px)and(max-width:1023px){
-  .container{
+.container{
     
     background-repeat: no-repeat;
     
     
   }
-  .fab{
+
+.fab{
     padding: 25px;
   }
   
-}
 
 .compet
 {
   border-radius: 25em;
 }
+
 
 .fa-user-graduate{
   color: rgb(104, 211, 211);
@@ -163,9 +182,22 @@ section{
   margin:20px;
   position: relative;
   left: 309px;
-  /* top:50px; */
   bottom: 355px;
   font-size: 88px;
   z-index: 2;
  
+}
+
+
+.card-body{
+  padding:20px 20px 46px 50px ;
+}
+
+.img-fluid{
+  position: relative;
+  top: 30px;
+  left: 34px;
+}
+
+
 }
